@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Carolina Data Challenge 2021</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+</head>
+
+<body>
+  <!-- your content here... -->
+  <section class="hero is-dark is-fullheight">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title is-1">
+                Carolina Data Challenge 2021
+            </h1>
+            <h2 class="subtitle">
+                By: Grant Everist, Jacob Turner, Rodrigo Meza and Zach Chaloupecky
+            </h2>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="content">
+            <h1 class="title">Introduction</h1>
+            <h5 class="subtitle has-text-grey">Methods, resources</h5>
+            <p>The Worldwide Mobile App User Behavior Dataset was chosen to be analyzed. R, Python, Excel and Tableau were 
+              used for statistical analysis, AmCharts 4 was used to create maps. On the JavaScript side of things,
+              WebPack, Bulma, Bootstrap, and Babel were used. Questions were created after a careful look at the data.
+               We have created 3 different questions to analyze:
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section has-background-white">
+    <div class="container">
+        <div class="content">
+            <h1 class="title has-text-weight-bold">Demographics based on country</h1>
+            <h5 class="subtitle has-text-grey has-text-weight-bold">How did respondents differ by country?</h5>
+            <p>Various means, medians of selected variables</p>
+        </div>
+        <hr/>
+        <div class="content has-text-centered">
+            <h1 class="title has-text-weight-normal">Gaming</h1>
+            <h5 class="subtitle has-text-grey has-text-weight-normal">How was gaming affected by age and country? What should we take from this information?</h5>
+
+        </div>
+        <hr/>
+
+        <div class="content has-text-right">
+            <h1 class="title has-text-weight-light">Education</h1>
+            <h5 class="subtitle has-text-grey has-text-weight-light">How is the education by country compare with those that use apps?</h5>
+
+        </div>
+        <hr/>
+        <div class="notification is-danger">
+            <p><span class="has-text-weight-bold">Warning! </span>Even with these data, more anaylsis and research should be done before it is taken as fact.</p>
+        </div>
+
+    </div>
+</section>
+
+  <script  src="index.js"></script>
+  <section class="section has-background-white">
+      <div class="container">
+          <div class="content">
+            <h1 class="title has-text-weight-light">Question 1: Demographics</h1>
+            <p>The following graph contains various demographical data related to the dataset. Hovering on a country with data attached will provide the user with more information about
+                the country. If the country has no data available, the hover will only display the country name.
+
+                <br/>
+                Out of the 10734 responses to the survey, 5366 recorded the country they lived in. 186 of these responsed "Other," so they are not present on the map. 
+                
+                <br/>
+                Education level was also measured on the following scale:
+                <ul>
+                    <li>(1) Primary</li>
+                    <li>(2) Secondary / High School</li>
+                    <li>(3) Diploma</li>
+                    <li>(4) Vocational</li>
+                    <li>(5) Undergrad</li>
+                    <li>(6) Masters</li>
+                    <li>(7) Doctoral</li>
+                    <li>(8) Other</li>
+                  </ul>
+                Due to the existence of (8) some averages may be skewed. However, these responses only took 23 out of the 5316 responses to this question.
+
+                <br/>
+
+                  
+                  
+            </p>
+          </div>
+      </div>
+
+  </section>
+  <div id="chartdiv" style="width: 75%; margin:auto;"></div>
+
+   <div class="container">
+    <div class="content">
+        <p>
+            Oddly enough, very few Americans responded to the survey despite it taking place in the US. This is opposite of China and Canada, who had the 2nd and 1st amount of responses.
+            These data are important in the overall analysis; some responses may be skewed due to the influence of these populations over those that had few responses. 
+        </p>
+        <br/>
+      <h1 class="title has-text-weight-light">Question 2: Gaming</h1>
+      The next area we wanted to look at was how users viewed games as apps. The graph below shows the distribution of those that play games against those that don't. As expected, most of the older respondents did not play games. however, near the 40-45 age range, there were equal amounts of those 
+      that played games and those that didn't. This was relatively surprising, as we predicted even at that age range, most wouldn't play games. Of course, the younger ages had the highest ratio of those that play games against those that don't. While these data aren't surprising, it reaffirms the tatic 
+      of advertising and focusing on youger populations.
+      <div class='tableauPlaceholder' id='viz1633128838537' style='position: relative'><noscript><a href='#'><img alt='Total Gaming Apps by Age ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;cd&#47;cdc2_16331287077980&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='cdc2_16331287077980&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;cd&#47;cdc2_16331287077980&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1633128838537');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <br/>
+      <p>
+          Given our previous question, we also wanted to tackle how game playing differed by country. Most of the data here was also not surpising (Korea and China having large mobile gaming populations), however there still were interesting results. In particular, we found that Japan's mobile gaming market was surpisingly low. 
+          Japan is a very work centric country and as a result we thought that mobile gaming would be a much bigger market. While the cause for this low amount isn't known, we believe the impact of other mobile gaming options like Nintendo Switch may impact this number. Another surprising point was the large proportion of gaming in Canada. 
+          If more time alloted we would plot Canada's age vs gaming playing to see if these result correlate more with age. Just like age this information is important for marketing and developing games. Catering to Japanese markets might not give as much as a profit as catering to Korean markets.
+      </p>
+      <div class='tableauPlaceholder' id='viz1633125719428' style='position: relative;'><noscript><a href='#'><img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;cd&#47;cdc_16331256679720&#47;Sheet1&#47;1_rss.png' style='border: none;' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='cdc_16331256679720&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;cd&#47;cdc_16331256679720&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1633125719428');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+    </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <br/>
+          <h1 class="title has-text-weight-light">Question 3: Education</h1>
+
+          <p>A reminder of education measures: 
+            <ul>
+                <li>(1) Primary</li>
+                <li>(2) Secondary / High School</li>
+                <li>(3) Diploma</li>
+                <li>(4) Vocational</li>
+                <li>(5) Undergrad</li>
+                <li>(6) Masters</li>
+                <li>(7) Doctoral</li>
+                <li>(8) Other</li>
+              </ul>
+              For this question, we wanted to see the distribution of education by country of those that took the survey.
+              For the most part, it lies the same with how averages were (in the demographics portion), however there were some stand out data.
+              Firstly, Korea's responses were oddly low, however based on question 2, we can attribute this to age rather than average education level. Thus 
+              the average education level was much lower. China's data was also interesting due to the high concentration of those with a Undergrad degree. While we can't make any firm
+              conclusions of why this is, it may also be related to age and the surveying methods. 
+
+              <br/>
+              <br/>
+              These data are important as it could help market apps to countries based on education level. For example, a learning app should be promoted in countries like China,
+              where a high amount of those surveyed were undergrad. 
+          </p>
+
+          <div id="chartdiv1" style="width: 75%; margin:auto;"></div>
+
+
+          <br/>
+          <br/>
+          <h1 class="title has-text-weight-light">Conclusion</h1>
+            <p>
+                From these data we analysed, we reaffirmed gaming marketing and presented areas for marketing in relation to educational apps. We also saw the general population demographics based on those that repsonded to the survey. 
+                For further research, we recommend either focusing on one market with a larger sample size (i.e. gaming) or to ask more quantitative mesaures as a way to make predictive models easier.
+            </p>
+          <br/>
+
+        </div>
+        </div>
+
+
+
+        
+</body>
+</html>
