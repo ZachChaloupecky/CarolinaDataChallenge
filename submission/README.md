@@ -1,29 +1,55 @@
-# Submissions
+# 2021 CDC Project Submission Template
 
-Submissions will be done through Devpost this year. Please make an account and register as a hackathon participant if you haven't done so already ([Link](https://cdcunc21.devpost.com/)).
+Welcome to the datathon/hackathon portion of the Carolina Data Challenge!
 
-## Submission Requirements
+This repository will serve as a starting platform for your team's project. You can create your own repository using this as a template. Click [here](https://github.com/Carolina-Data-Challenge/project-template-21/generate) or the "Use this Template" button in the top right corner to generate a repository using this one as a template.
 
-In order to be qualified for a reward, you must submit both of the following:
-1. 5 minute Presentation Video
-2. Github repository link
-Any teams that don't submit either of the 2, will not be in consideration for a prize.
+---
 
-### Presentation Video
-This video is to be **at most** 5 minutes long (it can be shorter if desired). It can be submitted as a YouTube link (public/unlisted) or on any other streaming platform as long as the video is be publicly accessible through the link.
+## Folders in this template.
+The default repository directory is as follows:
 
-### Github Repository Link
-We require the Github repository within which you completed your project. The link supplied must be public for the very least the duration of submission, judging, and until the end of the closing ceremony.
+### /datasets
+This is where you can find more information on your datasets. You may put your datasets in this folder but please keep in mind git/Github's file size limitations. Links to this year's datasets are as follows:
 
-Devpost itself has a few other submission requirements in order to finish your submission. Please fill those out to the best of your abilities. It will help us and the judges get a better understanding of your project.
+**Healthcare**
+- https://aspe.hhs.gov/reports/state-county-local-estimates-uninsured-population-prevalence-key-demographic-features
 
-## Tracks
-This year we have 4 tracks: Healthcare, Finance, Social Science, and Media. Remember that you may only enter into one track and that track must one of those that you used a corresponding dataset of.
+**Finance**
+- https://www.sec.gov/dera/data/financial-statement-data-sets.html
 
-## Teams
-On the topic of teams. Teams are to be finalized during the Devpost submission process. Only one person needs to submit, but they will need to add the Devpost profiles of the remaining members during submission. Please remember we have a policy of a maximum of 4 people per team.
+**Social Science**
+- https://data-wake.opendata.arcgis.com/datasets/ral::cdcs-social-vulnerability-index-svi-2014-overall-svi-census-tract-level-wake-county/about
 
-## Resources
-https://devpost.com/software/submission-instructions
-https://help.devpost.com/hc/en-us/articles/360054999651-How-to-enter-a-submission
-https://www.businessinsider.com/how-to-upload-a-video-to-youtube
+**Media**
+- https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/27459
+- https://www.kaggle.com/cmqub19/763k-ios-app-info
+
+To qualify for a prize, you must use one of our supplied datasets, but you may source any outside data to supplement your analysis. Additionally, to qualify for a track you must use **at least one** dataset from that specific track.
+
+More info on the datasets can be found [here](https://github.com/Carolina-Data-Challenge/project-template-21/tree/main/datasets).
+
+### /project
+This is where you can put/write code/files for your applications. You may use whatever programming language you want or use whichever statistical tools you need. Just remember that all work must be original to this hackathon.
+
+More resources on projects [here](https://github.com/Carolina-Data-Challenge/project-template-21/tree/main/project).
+
+### /submission
+You can see more info on what you need to submit here. In summary, both your repository and a 5 minute video must be submitted to our [Devpost](https://cdcunc21.devpost.com/) for judging. In addition, you must specify which track you want to submit to.
+
+More details and instructions on submissions [here](https://github.com/Carolina-Data-Challenge/project-template-21/tree/main/submission).
+
+---
+
+If you have any questions during the, either technical or logistical, be sure to reach out to a mentor and/or a director for assistance!
+
+---
+
+If you are unfamiliar with Git and/or GitHub, we highly recommend that you utilize the following resources:
+ 
+ | Name | Description |
+ |------|-------------|
+ | [GitHub Desktop App](https://desktop.github.com/) | The GitHub desktop app makes it extremely easy to interact with repositories and visualize the changes you are making.
+ | [Markdown Cheat Sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) | This markdown cheat sheet will help you style and structure your readme file if you feel inclined to do so.
+ | [Git Fundamentals](https://rogerdudler.github.io/git-guide/) | This brief but informative guide will get you up and running with everything you need to know for your project submission in GitHub.
+ 
